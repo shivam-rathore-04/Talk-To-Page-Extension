@@ -8,3 +8,4 @@ langchain-google-genai
 langchain-chroma
 langchain-huggingface
 huggingface-hub
+sentence-transformers
