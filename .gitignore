@@ -1,0 +1,15 @@
+# Node & React (Frontend)
+node_modules/
+dist/
+.env
+
+# Python & FastAPI (Backend)
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db

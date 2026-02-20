@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Talk To Page",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting", "sidePanel"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "side_panel": {
+      "default_path": "index.html"
+    },
+    "action": {
+      "default_title": "Talk To Page",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+
+    "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"]
+      }
+    ]
+  }

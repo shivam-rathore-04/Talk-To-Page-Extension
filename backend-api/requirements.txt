@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-core
+langchain-text-splitters
+langchain-google-genai
+langchain-chroma
+langchain-huggingface
+huggingface-hub
