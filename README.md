@@ -44,3 +44,29 @@ cd backend-api
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
+
+Create a .env file in the backend-api folder with your API keys:
+
+Code snippet
+GOOGLE_API_KEY=your_gemini_api_key_here
+HUGGINGFACE_TOKEN=your_huggingface_read_token_here
+Start the FastAPI server:
+
+```Bash
+uvicorn app.main:app --reload --port 8000
+
+### 2. Frontend Setup
+Navigate to the frontend directory:
+
+```Bash
+cd frontend-extension
+npm install
+npm run build
+3. Install the Extension in Chrome
+Open Google Chrome and navigate to chrome://extensions/.
+
+Toggle Developer mode ON in the top right corner.
+
+Click Load unpacked and select the dist folder located inside your frontend-extension directory.
+
+Pin the extension to your toolbar, open any webpage, and start chatting!
