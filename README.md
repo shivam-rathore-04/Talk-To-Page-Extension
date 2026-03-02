@@ -67,6 +67,9 @@ npm run build
 ### 3. Install the Extension in Chrome
 
 Open Google Chrome and navigate to chrome://extensions/.
+
 Toggle Developer mode ON in the top right corner.
+
 Click Load unpacked and select the dist folder located inside your frontend-extension directory.
+
 Pin the extension to your toolbar, open any webpage, and start chatting!
